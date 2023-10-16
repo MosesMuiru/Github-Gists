@@ -3,3 +3,37 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+/* adding costomized fonts */
+
+@font-face {
+    font-family: "WorkSans";
+    src: url("/fonts/WorkSans-Regular.tff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WorkSans";
+
+    src: url("/fonts/WorkSans-Bold.tff");
+    font-style: normal;
+    font-weight: bold;
+}
+
+.round-image-padding {
+    border-radius:50% ;
+    border: 1.5px solid #FFFFFF;
+    padding: 2px;
+
+}
+
+.img-down-arrow:after{
+    content:"";
+    position:absolute;
+    right: -10px;
+    top: 45%;
+    transform:translate(-50%);
+    border-width: 5px 5px 0 5px;
+    border-color: white trasparenct transparent transparent;
+    border-style: solid;
+}
